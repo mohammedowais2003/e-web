@@ -5,23 +5,24 @@ export const Hero = () => {
   return (
     <>
       {/* First Section: Hero Section */}
-      <section className="bg-amber-100 flex flex-col md:flex-row items-center justify-center h-screen md:h-[100vh] px-4 md:px-10">
+       {/* Hero Section */}
+       <section className="bg-amber-100 flex flex-col md:flex-row items-center justify-center h-screen md:h-[100vh] px-4 md:px-10">
         {/* Left Section */}
-        <div className="flex flex-col items-start justify-center w-full md:w-1/2 text-center md:text-left">
+        <div className="flex flex-col items-center md:items-start justify-center w-full md:w-1/2 text-center md:text-left">
           <h1 className="text-3xl md:text-5xl font-bold text-black mb-4">
-            Rocket Single <br />
-            Seater
+            Rocket Single <br /> Seater
           </h1>
+          {/* Shop Now Button for Desktop */}
           <a
             href="http://localhost:3000/shop"
-            className="text-black underline text-sm hover:text-gray-700 transition"
+            className="hidden md:inline-block text-black underline text-sm hover:text-gray-700 transition mt-4"
           >
             Shop Now
           </a>
         </div>
 
         {/* Right Section */}
-        <div className="w-full md:w-1/2 h-full flex items-center justify-center mt-6 md:mt-0">
+        <div className="w-full md:w-1/2 h-full flex flex-col items-center justify-center mt-6 md:mt-0">
           <Image
             src="/h.png.png"
             alt="Rocket Single Seater"
@@ -29,8 +30,16 @@ export const Hero = () => {
             height={500}
             className="object-contain"
           />
+          {/* Shop Now Button for Mobile */}
+          <a
+            href="http://localhost:3000/shop"
+            className="inline-block md:hidden text-black underline text-sm hover:text-gray-700 transition mt-4"
+          >
+            Shop Now
+          </a>
         </div>
       </section>
+    
 
       {/* Second Section: Top Pick */}
       <section className="bg-gray-100 text-black py-10">

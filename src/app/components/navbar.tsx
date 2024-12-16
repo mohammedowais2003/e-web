@@ -17,7 +17,7 @@ export function NavBar() {
         {/* Left Section - Brand/Logo */}
         <div className="flex items-center">
           <Link href="/">
-            <span className="text-lg font-bold text-gray-800"></span>
+            <span className="text-lg font-bold text-black"></span>
           </Link>
         </div>
 
