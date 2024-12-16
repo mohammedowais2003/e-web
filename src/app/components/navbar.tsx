@@ -1,6 +1,6 @@
 'use client'
 
-import { useState, useEffect } from 'react'
+import { useState } from 'react'
 import Link from 'next/link'
 import { Heart, Menu, Search, ShoppingCart, User, X } from 'lucide-react'
 
